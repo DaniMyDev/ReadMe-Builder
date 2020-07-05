@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script/filesaver.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Build README</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="top-container">
+            <p><!--<img src="img/code.png">--></img>README.md</p>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <input class="input_Title" type="text" v-model='sections[0].title'>
+                <hr>
+                <input class="italic no-border" type="text" v-model='sections[0].desc'>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">Getting Started</p></div>
+                    <div><img src="img/gettingstarted.jpg" alt=""></div>
+                </div>
+                <hr>
+                <textarea class="italic no-border" type="text" v-model='sections[1].desc'></textarea>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">Installation</p></div>
+                    <div><img src="img/installation.jpg" alt=""></div>
+                </div>
+                <hr>
+                <input class="italic no-border" type="text" v-model='sections[2].desc'>
+                <textarea type="text" class="code" v-model='sections[2].code'></textarea>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">Usage</p></div>
+                    <div><img src="img/usage.jpg" alt=""></div>
+                </div>
+                <hr>
+                <select v-model="sections[3].lang">
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="java">Java</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="swift">Swift</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="c++">C++</option>
+                    <option value="c#">C#</option>
+                </select>
+                <textarea cols="30" rows="10" class="code" v-model='sections[3].code'></textarea>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">Deploy</p></div>
+                    <div><img src="img/deploy.jpg" alt=""></div>
+                </div>
+                <hr>
+                <textarea class="italic no-border" type="text" v-model='sections[4].desc'></textarea>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">Tools</p></div>
+                    <div><img src="img/tools.jpg" alt=""></div>
+                </div>
+                <hr>
+                <textarea class="italic no-border" type="text" v-model='sections[5].desc'></textarea>
+                <ul>
+                    <li><p class="italic example-tool">Example: Vue js - Front End</p></li>
+                    <li v-for="(t,index) in tools" class="tool">
+                        <div><input type="text" v-model='t.name'></div>
+                        <div><button @click="removeTool(index)">remove</button></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="subtitle">
+                    <div><p class="subTitle">License</p></div>
+                    <div><img src="img/license.jpg" alt=""></div>
+                </div>
+                <hr>
+                <select v-model='sections[6].value'>
+                    <option value="GNU AGPLv3">GNU AGPLv3</option>
+                    <option value="GNU GPLv3">GNU GPLv3</option>
+                    <option value="GNU LGPLv3">GNU LGPLv3</option>
+                    <option value="MIT">Mozilla Public License 2.0</option>
+                    <option value="Apache License 2.0">Apache License 2.0</option>
+                    <option value="MIT License">MIT License</option>
+                    <option value="Boost Software License 1.0">Boost Software License 1.0</option>
+                    <option value="The Unlicense">The Unlicense</option>
+                </select>
+            </div>
+
+            <button @click='buildREADME'>Get README</button>
+
+            <div class="section footer">
+                <p>Made width <!--<img src="img/heart.png" alt="">-->♥ by <a target="_blank" href="https://github.com/RivenFlows">rivenflows</a></p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

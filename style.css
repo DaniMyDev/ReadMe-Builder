@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+    font-family: 'Open Sans';
+    text-decoration: none;
+    margin: 0;
+}
+span{
+    font-weight: 700;
+    color: #2E68C6;
+    font-size: 58px;
+}
+a{
+    color: #737373;
+}
+.showcase{
+    margin-top: 20vh;
+    text-align: center;
+}
+.showcase h1{
+    font-weight: 300;
+    font-size: 50px;
+    margin: 40px;
+}
+
+#app{
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    width: 80%;
+    margin: 50px auto;
+}
+.top-container{
+    background: #EEEEEE;
+    padding: 15px;
+    color: #2E68C6;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px 8px 0px 0px;
+}
+.top-container img{
+    width: 18px;
+    margin-right: 10px;
+}
+.container{
+    padding: 0px 50px 50px 50px;
+    border-radius: 0px 0px 7px 7px;
+}
+hr{
+    color: #BDBDBD;
+    margin: 15px 0px;
+}
+input ,textarea{
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.input_Title{
+    font-size: 36px;
+    color: #202020;
+    padding: 0;
+    border: none;
+}
+.subtitle{
+    font-size: 24px;
+    color: #202020;
+    display: flex;
+    align-items: center;
+}  .subtitle img{margin-left: 5px;}
+.code{
+    font-family: sans-serif;
+    background: #EBEBEB;
+    padding: 20px;
+    font-size: 14px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 8px;
+}
+.italic{
+    font-style: italic;
+}
+.no-border{
+    border: none;
+    padding: 0;
+}
+.section{
+    margin: 50px 0px;
+}
+.tool{
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.tool button{
+    background: #FF6F6F;
+    padding: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.example-tool{
+    font-size: 18px;
+    color: #BBBBBB;
+}
+button{
+    background: #404040;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    opacity: .9;
+}
+.landing-btn{
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 70px;
+}
+.footer img{
+    width: 15px;
+}
