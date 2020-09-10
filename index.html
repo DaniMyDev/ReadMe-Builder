@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script/filesaver.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Build README</title>
+    <script src="script/script.js" async></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>READOC</title>
 </head>
 
-<body>
+<body> 
+
+    <div class="header">
+        <h1></span>REA <span style="color: var(--green-color)">DOC</span></h1>
+        <p>README FILE GENERATOR</p>
+    </div>
 
     <div id="app">
 
@@ -23,7 +29,7 @@
             <div class="section">
                 <input class="input_Title" type="text" v-model='sections[0].title'>
                 <hr>
-                <input class="italic no-border" type="text" v-model='sections[0].desc'>
+                <input class="no-border" type="text" v-model='sections[0].desc'>
             </div>
 
             <div class="section">
@@ -32,7 +38,7 @@
                     <div><img src="img/gettingstarted.jpg" alt=""></div>
                 </div>
                 <hr>
-                <textarea class="italic no-border" type="text" v-model='sections[1].desc'></textarea>
+                <textarea class="no-border" type="text" v-model='sections[1].desc'></textarea>
             </div>
 
             <div class="section">
@@ -41,7 +47,7 @@
                     <div><img src="img/installation.jpg" alt=""></div>
                 </div>
                 <hr>
-                <input class="italic no-border" type="text" v-model='sections[2].desc'>
+                <input class="no-border" type="text" v-model='sections[2].desc'>
                 <textarea type="text" class="code" v-model='sections[2].code'></textarea>
             </div>
 
@@ -70,7 +76,7 @@
                     <div><img src="img/deploy.jpg" alt=""></div>
                 </div>
                 <hr>
-                <textarea class="italic no-border" type="text" v-model='sections[4].desc'></textarea>
+                <textarea class="no-border" type="text" v-model='sections[4].desc'></textarea>
             </div>
 
             <div class="section">
@@ -79,9 +85,9 @@
                     <div><img src="img/tools.jpg" alt=""></div>
                 </div>
                 <hr>
-                <textarea class="italic no-border" type="text" v-model='sections[5].desc'></textarea>
+                <textarea class="no-border" type="text" v-model='sections[5].desc'></textarea>
                 <ul>
-                    <li><p class="italic example-tool">Example: Vue js - Front End</p></li>
+                    <li><p class="example-tool">Example: Vue js - Front End</p></li>
                     <li v-for="(t,index) in tools" class="tool">
                         <div><input type="text" v-model='t.name'></div>
                         <div><button @click="removeTool(index)">remove</button></div>
@@ -107,16 +113,14 @@
                 </select>
             </div>
 
-            <button @click='buildREADME'>Get README</button>
-
-            <div class="section footer">
-                <p>Made width <!--<img src="img/heart.png" alt="">-->♥ by <a target="_blank" href="https://github.com/RivenFlows">rivenflows</a></p>
-            </div>
+            <button @click='buildREADME' class="getreadmeBtn">Get README</button>
 
         </div>
     </div>
 
-</body>
-<script src="script/script.js"></script>
+    <div class="section footer">
+        <p>Made with &hearts; by <a target="_blank" href="https://github.com/RivenFlows">rivenflows</a></p>
+    </div>
 
+</body>
 </html>

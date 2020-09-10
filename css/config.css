@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+    font-family: 'Open Sans';
+    text-decoration: none;
+    margin: 0;
+}
+span{
+    font-weight: 700;
+    color: #2E68C6;
+    font-size: 58px;
+}
+a{
+    color: #737373;
+}
+:root{
+	--primary-color: #2E2E2E;
+	--gray-color: #8B8B8B;
+	--green-color: #44C181;
+	--white-color: #FFFFFF;
+	--background-gray: #EEEEEE; 
+	--hr-color: #E8E8E8;
+	--red-color: #FF6F6F;
+
+	--title-fontsize: 32px;
+	--subtitle-fontsize: 26px;
+	--normal-fontsize: 18px;
+	--small-fontsize: 14px;
+}
+button{
+    background: #404040;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    opacity: .9;
+}
+input, textarea, select{
+	padding: 5px;
+}

@@ -1,0 +1,94 @@
+@import 'config.css';
+
+.header{
+    text-align: center;
+    padding: 40px;
+}
+.header h1,span{
+    font-size: 80px;
+    letter-spacing: 20px;
+}
+.header p{
+    font-size: 28px;
+    word-spacing: 10px;
+    opacity: .4;
+}
+#app{
+    box-shadow: 0px 10px 10px var(--background-gray);
+    width: 80%;
+    margin: 50px auto;
+}
+.top-container{
+    background: var(--background-gray);
+    padding: 15px;
+    color: var(--primary-color);
+    font-size: var(--small-font-size);
+    font-weight: bold;
+}
+.top-container img{
+    width: 18px;
+    margin-right: 10px;
+}
+.container{padding: 0px 50px 50px 50px;}
+hr{
+    color: var(--hr-color);
+    margin: 15px 0px;
+}
+input ,textarea{
+    width: 100%;
+    font-size: var(--normal-fontsize);
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+.input_Title{
+    font-size: var(--title-fontsize);
+    color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+}
+.subtitle{
+    font-size: var(--subtitle-fontsize);
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+.subtitle img{margin-left: 5px;}
+.code{
+    font-family: sans-serif;
+    background:var(--background-gray);
+    font-size: var(--small-font-size);
+    border: none;
+    margin: 10px 0px;
+}
+.no-border{
+    border: none;
+}
+.section{
+    margin: 60px 0px;
+}
+.tool{
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.tool button{
+    background: var(--red-color);
+    padding: 7px 10px;
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    margin-left: 5px;
+}
+.example-tool{
+    font-size: var(--normal-fontsize);
+    color: var(--primary-color);
+}
+.getreadmeBtn{
+    background: var(--green-color);
+    color: var(--white-color);
+    font-size: var(--normal-fontsize);
+}
+.footer{
+    text-align: center;
+}
