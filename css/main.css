@@ -2,7 +2,7 @@
 
 .header{
     text-align: center;
-    padding: 40px;
+    padding: 80px 0px;
 }
 .header h1,span{
     font-size: 80px;
@@ -15,11 +15,12 @@
 }
 #app{
     box-shadow: 0px 10px 10px var(--background-gray);
-    width: 80%;
-    margin: 50px auto;
+    border: 1px solid var(--background-gray);
+    border-radius: 8px;
+    width: 60%;
+    margin: 80px auto;
 }
 .top-container{
-    background: var(--background-gray);
     padding: 15px;
     color: var(--primary-color);
     font-size: var(--small-font-size);
@@ -31,8 +32,8 @@
 }
 .container{padding: 0px 50px 50px 50px;}
 hr{
-    color: var(--hr-color);
     margin: 15px 0px;
+    border: 1px solid var(--hr-color);;
 }
 input ,textarea{
     width: 100%;
